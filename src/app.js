@@ -70,8 +70,11 @@ atualizarCarrinho = () =>{
         
         <div class="info-single-checkout">
         <p style="float:left;">Produto: `+val.nome+`</p>
+        <br>
         <p style="float:right;"> Preço: `+ "R$ " +val.preco+  `</p>
+        <br>
         <p style="float:right;"> Quantidade: `+val.quantidade+ `</p>
+        
         <div style="clear:both"></div>
         </div>
         `;
