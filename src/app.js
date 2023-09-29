@@ -40,6 +40,8 @@ inicializarLoja = () =>{
 
 }
 
+
+
 inicializarLoja();
 
 atualizarCarrinho = () =>{
@@ -78,3 +80,15 @@ for(var i = 0; i < links.length; i++){
         return false;
     });
 }
+
+// // Crie uma nova imagem
+// const imagem = new Image();
+
+// // Defina a fonte (URL) da imagem
+// imagem.src = '/img/camiseta.jpg';
+
+
+
+// console.log(imagem.src)
+
+// // Agora, a variável 'imagem' contém a imagem
