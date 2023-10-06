@@ -7,15 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Loja Virtual</title>    
 </head>
 
 
 <body>
 
-    <div class="header">
+    <div class="header"> 
         <div class="logo">
             <a href="#"><img src="img/w-logo-33558.png" alt=""></a>
         </div>
@@ -26,11 +28,11 @@
         </div>
         <div class="icons">
             <a href="#" class="fa fa-heart-o"></a>
-            <a href="#" class="fa fa-shopping-cart"></a>
+            <a id="cardIcon" href="#" class="fa fa-shopping-cart"></a>
             <a href="#" class="fa fa-user"></a>
             <a href="#" class="fa fa-bars"></a>
         </div>
-    </div>
+    </div>   <!---Final do Header-->
 
     <div class="links">
         <a href="#">Woman</a>
@@ -41,18 +43,51 @@
         <a href="#">Child</a>
     </div>
 
-    <div id="produtos">
-      
-    </div> <!---produtos-->
+    <section id="principal">
 
+        <div id="produtos"></div> <!---produtos-->
+        
+    </section>
 
     <br><br><br>
     <hr>
-    <h2>Carrinho </h2>
-    <div id="carrinho">
-       
-    </div> <!---carrinho-->
 
+    <!-- ------------------------------------------------------CARRINHO DE COMPRAS HTML ------------------------------------------------->
+    <main id="carrinhoHTML">
+        <div class="content">
+               <table id="tabelaCarrinho">
+                    <thead class="thead">
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Sub-Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    <!----------------------------------------------Inicio de um produto----------------------------------------------------->
+                
+                    <!----------------------------------------------Inicio de um produto----------------------------------------------------->
+                    </tbody>
+                </table>
+
+            <aside class="asideCarrinho">
+                <div class="box">
+                  <header>Resumo da compra</header>
+                    <div class="infoCarrinho">
+                      <div><span>Sub-Total</span> <span>R$ 477</span></div>
+                      <div><span>Frete</span> <span>Gratuito</span></div>
+                      <div><button>Adcionar cumpom de desconto <i class='bx bx-right-arrow-alt'></i></button></div>
+                    </div>
+                  <footer>
+                    <span>Total</span>
+                    <span>R$ 477</span>
+                </div>
+                <button>Finalizar compra</button>
+            </aside>
+        </div>
+    </main>
 
     <script src="src/app.js"></script>
     <script src="css/scriptCss.js"></script>

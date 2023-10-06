@@ -1,4 +1,4 @@
 # mineLojVirtual
-loja virtual com poucos produtos (mvp)
-
-DEVO FAZER OS CARDS DE VENDA ESTILIZADOS E FAZER A HOME PAGE DO SITE 
+loja virtual com poucos produtos (MVP)
+<h2>1- fazer a arquitetura BEM DETALHADA e em seguida começar a desenhar os componentes.</h2>
+<h2>2-Implementar .</h2>

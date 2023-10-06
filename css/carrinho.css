@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+      
+*{
+    margin: 0;
+    padding: 0;
+}
+
+      body{
+          background: #f6f6f6;
+          font-family: 'Lato', sans-serif;
+      }
+
+      button{
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+      }
+
+      /* ------------------------Main-------------------- */
+
+      .showCarrinho{
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      main{
+        background: #fff;
+        padding: 0 30px 30px 0;
+        display: none;
+      }
+
+     .content{
+        display: flex;
+      }
+
+      .content section{
+        flex: 1;
+      }
+
+      .content aside{
+        min-width: 250px;
+      }
+     
+
+      /* -------------------------------Table styles --------------------------- */
+
+      #tabelaCarrinho{
+        width: 100%;
+        border-collapse: collapse;
+        margin: -20px 0 0 20px;
+      }
+
+      #tabelaCarrinho thead tr {
+          border-bottom: 3px solid #eee;
+    
+      }
+      #tabelaCarrinho thead tr th{
+          text-align: left;
+          padding-bottom: 10px 0;
+          text-transform: uppercase;
+          color: #666;
+      }
+
+      tbody tr{
+        border-bottom: 3px solid #eee;
+
+        &:last-child{
+          border: 0;
+        }
+      }
+
+      tbody tr td{
+        padding: 30px ;
+      }
+
+      .product{
+        display: flex;
+        align-items: center;
+
+      }
+
+      .qty{
+        background: #eee;
+        display: inline-flex;
+        padding: 0 0;
+        justify-content: space-around;
+        width: 100px;
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 30px;
+      }
+
+      .qty button{
+        background: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        font-size: 20px;
+        height: 100%;
+
+        &:hover{
+          background: #ddd;
+        }
+      }
+
+      .qty span{
+        margin:  0 10px;
+      }
+
+      .remove{
+        background: #eee;
+        border: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+
+        &:hover{
+          background: #ddd;
+        }
+      }
+
+      img{
+        border-radius:6px ;
+      }
+
+      .info{
+        margin-left:30px ;
+      }
+
+      .category{
+        color: #666;
+      } 
+      .name{
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .asideCarrinho  > button{
+        background: #4c3282;
+        display: block;
+        width: 100%;
+        color: white;
+        border: 0;
+        padding: 15px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+      }
+
+      .asideCarrinho{
+        margin-left: 30px ;
+      }
+
+      .box{
+        margin-bottom: 15px ;
+        border: 1px solid #ccc;
+        background: #ddd;
+      }
+
+      .box > header{
+        padding: 15px 20px;
+        font-size: 18px;
+        border-bottom: solid #ccc;
+      }
+
+      .box > .infoCarrinho{
+       padding: 20px;
+        font-size: 16px;
+      }
+
+      .infoCarrinho > div{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .infoCarrinho button{
+        color:  #4c3282;
+        background: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+      }   
+
+      .box > footer{
+        padding: 15px 20px;
+        font-size: 18px;
+        background: #ccc;
+      }
+
+      .product img{
+        height: 100px;
+        width: 100px;
+      }
+
+                
+      @media (max-width: 768px) {
+                                /* CONTAINER MAIN QUE CONTEM A TABELA */
+        #carrinhoHTML{
+          /* border: 1px solid blue; */
+          margin-top: -40px;
+        }
+                                /* Table/ Tabela em preto*/
+        #tabelaCarrinho{
+          /* border: 3px solid black; */
+          width: 40%;;
+        }
+
+                                /* Linhas da tabela em vermelho */
+        #tabelaCarrinho tr{
+          /* border: 5px solid red; */
+          margin:0 ;
+          padding: 0;
+          font-size: 70%;
+          text-align: left;
+        
+        }
+
+        #tabelaCarrinho td{
+          /* border: 3px solid yellow; */
+        }
+
+        #tbody tr td{
+         /* border: 1px solid green; */
+         text-align: left;
+         padding: 8px;
+        }
+    
+        .qty{
+          /* border: 2px solid pink; */
+          height: 80%;
+          width: 80%;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+        }
+
+        .qty button{
+          font-size: 70%;
+        }
+        .qty button span{
+          margin:  0;
+        }
+
+        .info p{
+          font-size: 80%;
+        }
+
+        .product img{
+          width: 80%;
+          height: 80%;
+        }
+
+        .content{
+          display: flex;
+          flex-direction: column;
+        }
+
+        .asideCarrinho{
+          width: 20%;
+
+        }
+
+    }
